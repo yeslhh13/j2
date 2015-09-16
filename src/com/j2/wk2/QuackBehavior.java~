@@ -1,0 +1,5 @@
+package com.j2.wk2;
+
+public class QuackBehavior{
+  public void quack();
+}
