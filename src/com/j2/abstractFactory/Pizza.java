@@ -15,11 +15,23 @@ public abstract class Pizza {
   void box() {
     System.out.println("Boxing..");
   }
+  public void setName(String name) {
+    this.name = name;
+  }
   public String getName() {
     return name;
   }
   public String toString() {
-    System.out.println("-----" + name + "-----");
-    return name;
+    StringBuffer result = new StringBuffer();
+        result.append("---- " + name + " ----\n");
+        if (dough != null) {
+            result.append(dough);
+            result.append("\n");
+        }
+        if (cheese != null) {
+            result.append(cheese);
+            result.append("\n");
+        }
+        return result.toString();
   }
 }
