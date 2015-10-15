@@ -1,15 +1,15 @@
 package com.j2.abstractFactory;
 
-public class CheesePizza extends Pizza {
+public class PotatoPizza extends Pizza {
   PizzaIngredientFactory ingredientFactory;
   
-  public CheesePizza(PizzaIngredientFactory ingredientFactory) {
-    name = "Cheese Pizza";
+  public PotatoPizza(PizzaIngredientFactory ingredientFactory) {
+    name = "Potato Pizza";
     this.ingredientFactory = ingredientFactory;
   }
   void prepare() {
     System.out.println("Preparing..");
     dough = ingredientFactory.createDough();
-    cheese = ingredientFactory.createCheese();
+    potato = ingredientFactory.createPotato();
   }
 }

@@ -4,6 +4,7 @@ public abstract class Pizza {
   String name;
   Dough dough;
   Cheese cheese;
+  Potato potato;
   
   abstract void prepare();
   void bake() {
@@ -23,13 +24,17 @@ public abstract class Pizza {
   }
   public String toString() {
     StringBuffer result = new StringBuffer();
-        result.append("---- " + name + " ----\n");
+        result.append(name + "\n");
         if (dough != null) {
             result.append(dough);
             result.append("\n");
         }
         if (cheese != null) {
             result.append(cheese);
+            result.append("\n");
+        }
+        if (potato != null) {
+            result.append(potato);
             result.append("\n");
         }
         return result.toString();

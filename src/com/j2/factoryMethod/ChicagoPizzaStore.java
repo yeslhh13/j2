@@ -1,17 +1,17 @@
 package com.j2.factoryMethod;
 
-public class NYPizzaStore extends PizzaStore {
+public class ChicagoPizzaStore extends PizzaStore {
   protected Pizza createPizza(String item) {
     if (item.equals("cheese"))
-      return new NYStyleCheesePizza();
+      return new ChicagoStyleCheesePizza();
     else if (item.equals("veggie")) 
-      return new NYStyleVeggiePizza();
+      return new ChicagoStyleVeggiePizza();
     else if (item.equals("clam"))
-      return new NYStyleClamPizza();
+      return new ChicagoStyleClamPizza();
     else if (item.equals("pepperoni"))
-      return new NYStylePepperoniPizza();
+      return new ChicagoStylePepperoniPizza();
     else if (item.equals("potato"))
-      return new NYStylePotatoPizza();
+      return new ChicagoStylePotatoPizza();
     else
       return null;
   }
