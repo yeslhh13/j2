@@ -1,0 +1,11 @@
+package com.j2.singleton.choco;
+
+public class SingletonMain {
+  public static void main(String[] args) {
+    Singleton cb = Singleton.getInstance();
+    cb.fill();
+    
+    Singleton cb2 = Singleton.getInstance();
+    cb2.fill();
+  }
+}
